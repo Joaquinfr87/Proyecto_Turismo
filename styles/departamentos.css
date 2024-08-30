@@ -1,0 +1,31 @@
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #333;
+    /* background: url(../images/santa-cruz/santa-cruz.webp); */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+
+.historia {
+    text-align: center;
+    font-size: large;
+    color: #fff;
+    letter-spacing: 2px;
+    margin: 0 100px;
+}
+
+.historia p{
+    padding: 25px;
+    text-align: justify;
+    line-height: 30px;
+}
+
+.resumen {
+    justify-content: center;
+    box-sizing: border-box;
+    margin: 0;
+    text-align: center;
+}
