@@ -35,14 +35,8 @@
     border: 4px solid white;
     transition: all .5s ;
 }
-
-@media(max-width: 1000px){
+@media (max-width: 768px){
     .contenedor-video{
-        
-    }   
-}
-@media(max-width: 600px){
-    .contenedor-video{
-        
-    }   
+        height: 750px;        
+    }
 }
