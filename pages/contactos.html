@@ -4,42 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contactanos</title>
+    <link rel="stylesheet" href="../styles/header-footer.css">
     <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
-    <header>
-        <a href="#" class="logo">Logo</a>
-        <nav>
-            <ul>
-                <li><a href="beni.html">Beni</a></li>
-                <li><a href="#Cochabamba">Cochabamba</a></li>
-                <li><a href="potosi.html">Potosí</a></li>
-                <li><a href="oruro.html">Oruro</a></li>
-                <li><a href="#La Paz">La Paz</a></li>
-                <li><a href="#Tarija">Tarija</a></li>
-                <li><a href="#Pando">Pando</a></li>
-                <li><a href="#Chuquisaca">Chuquisaca</a></li>
-            </ul>
-        </nav>
-    </header>
+   <!----Header--------------------------------------------------------------------->
+   <header>
+    <div class="logo">
+        <a href="#" class="logo"><img src="../images/logo.png"="logo"></a>
+    </div>
+    <nav>
+        <ul class="menu">
+            <li><a href="../index.html">Inicio</a></li>
+            <li class="submenu">
+                <a href="#">Departamentos</a>
+                <ul class="submenu-dep">
+                    <li><a href="../pages/beni.html">Beni</a></li>
+                    <li><a href="#Cochabamba">Cochabamba</a></li>
+                    <li><a href="../pages/potosi.html">Potosí</a></li>
+                    <li><a href="../pages/oruro.html">Oruro</a></li>
+                    <li><a href="#La Paz">La Paz</a></li>
+                    <li><a href="#Tarija">Tarija</a></li>
+                    <li><a href="#Pando">Pando</a></li>
+                    <li><a href="#Chuquisaca">Chuquisaca</a></li>    
+                </ul>
+            </li>
+            <li><a href="contactos.html">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+<!------------------------------------------------------------------------->
     <main></main>
+     <!--Script header--------------------------------------------------------------------------------->   
+     <script type="text/javascript">
+        window.addEventListener("scroll",function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky",window.scrollY >  0);
+        })
+    </script>
+<!------------------------------------------------------------------------------------------------->
+    <!-----------Footer------------------------------------------------------------------------------------>
     <footer class="footer">
         <div class="container">
             <div class="footer-row">
-                <div class="footer-links">
-                    <h4>Ciudades</h4>
-                    <ul>
-                        <li><a href="beni.html">Beni</a></li>
-                        <li><a href="#Cochabamba">Cochabamba</a></li>
-                        <li><a href="santa_cruz.html"></a></li>
-                        <li><a href="potosi.html">Potosí</a></li>
-                        <li><a href="oruro.html">Oruro</a></li>
-                        <li><a href="#La Paz">La Paz</a></li>
-                        <li><a href="#Tarija">Tarija</a></li>
-                        <li><a href="#Pando">Pando</a></li>
-                        <li><a href="#Chuquisaca">Chuquisaca</a></li>
-                    </ul>
-                </div>
+                <div class="footer-links"> 
+                    <a href="pages/contactos.html"><h4>Contacto</h4></a>
+                    <p>Email: info@ejemplo.com</p>
+                    <p>Teléfono: (123) 456-7890</p>
+                </div> 
                 <div class="footer-links">
                     <h4>Siguenos</h4>
                     <div class="social-links">
@@ -55,5 +67,6 @@
             </div>
         </div>
     </footer>
+    <!----------------------------------------------------------------------------------------------->
 </body>
 </html>
