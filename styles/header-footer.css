@@ -22,6 +22,7 @@ header{
 .logo a img{
     width: 90px;
     max-width: 100%;
+    filter: drop-shadow(5px 5px 10px rgba(255,255,255,0.5));
 }
 nav ul{
     position: relative;
