@@ -23,7 +23,15 @@ header{
     width: 90px;
     max-width: 100%;
     filter: drop-shadow(5px 5px 10px rgba(255,255,255,0.5));
+    transition: 0.5s;
 }
+.logo a img:hover{
+    width: 90px;
+    max-width: 100%;
+    filter: drop-shadow(5px 5px 10px rgba(255,255,255,0.5));
+    transform: scale(1.1)rotate(360deg);
+}
+
 nav ul{
     position: relative;
     list-style: none;
@@ -37,7 +45,9 @@ nav ul li{
     position: relative;
 }
 nav ul li a{
+    font-size: 20px;
     position: relative;
+    font-weight: bolder;
     color: white;
     text-decoration: none;
     padding: 10px 15px;
@@ -45,9 +55,11 @@ nav ul li a{
     transition: 0.6s;
 }
 nav ul li:hover{
-    background-color: blueviolet;
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 20px;
 }
 .submenu-dep{
+    border-radius: 10px;
     display: none;
     position: absolute;
     top: 100%;
@@ -59,9 +71,20 @@ nav ul li:hover{
 }
 .submenu-dep li a{
     padding: 10px 20px;
+    font-size: 15px;
+    font-weight: normal;
 }
+.submenu-dep li a:hover{
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: normal;
+    color: white;
+}
+
 .submenu:hover .submenu-dep{
-    display: block;
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
 }
 @media (max-width: 768px) {
     header {
@@ -78,12 +101,17 @@ nav ul li:hover{
       width: 100%;
     }
   
+    nav ul li a{
+        font-size: 15px;
+    }
+
     .submenu-dep {
       position: relative;
       width: 100%;
       max-height: 200px;
       overflow-y:auto;
     }
+    
     .submenu:focus-within .submenu-dep {
         display: block;
         position: relative;

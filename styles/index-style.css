@@ -34,9 +34,20 @@
     color: aliceblue;
     border: 4px solid white;
     transition: all .5s ;
+    cursor: pointer;
 }
 @media (max-width: 768px){
     .contenedor-video{
         height: 750px;        
     }
+}
+.contenedor-video a button:hover{
+    padding: 15px 35px;
+    background: transparent;
+    border-radius: 50px;
+    color: aliceblue;
+    border: 4px solid white;
+    transition: all .5s ;
+    cursor: pointer;
+    transform: scale(1.1);
 }
