@@ -2,7 +2,7 @@
     flex-direction: column;
     display: flex;
     position: relative;
-    height: 1000px;
+    height: 100vh;
     justify-content: center;
     align-items: center;
     text-align: center;
