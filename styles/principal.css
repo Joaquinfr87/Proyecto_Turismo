@@ -229,6 +229,7 @@
 
 .slide.active {
     display: flex;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
@@ -236,7 +237,7 @@
     width: 200px;
     height: 190px;
     border-radius: 50%;
-    margin-right:15px;
+    margin-right:0;
     padding: 0;
 }
 
@@ -449,4 +450,33 @@
 .contact-form button:hover {
     background-color: #c9b440; 
     transform: scale(1.03); 
+}
+@media (max-width: 768px){
+    .about-text h2{
+        font-size: 1.5rem;
+    }
+    .about-text p{
+        font-size: 0.9rem;
+    }
+    .services-section h2 {
+        font-size: 28px;
+    }
+    .service-item h3{
+        font-size: 16px
+    }
+    .service-item p{
+        font-size: 14px;
+    }
+    .testimonials-section h2{
+        font-size: 24px;
+    }
+    .testimonial-content p{
+        font-size: 14px;
+    }
+    .testimonial-content h4{
+        font-size: 15px;
+    }
+    .testimonial-content .role{
+        font-size: 12px;
+    }
 }

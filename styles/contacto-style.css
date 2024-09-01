@@ -100,6 +100,13 @@ form button{
     border-radius: 40px;
     border: none;
     font-weight: bold;
+    transition: 0.6s;
+}
+form button:hover{
+    transform: scale(1.1);
+}
+form button:active{
+    background-color: white;
 }
 #ubicacion{
     display: flex;

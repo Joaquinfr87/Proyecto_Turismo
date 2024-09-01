@@ -22,11 +22,6 @@
     color: white;
     text-shadow: 0 2px 2px rgba(0,0,0,0.5);
 }
-.contenedor-video h2{
-    color: white;
-    margin-bottom: 40px;
-    font-size: 25px;
-}
 .contenedor-video a button{
     padding: 15px 35px;
     background: transparent;
@@ -39,6 +34,9 @@
 @media (max-width: 768px){
     .contenedor-video{
         height: 750px;        
+    }
+    .contenedor-video h1{
+        font-size: 40px;
     }
 }
 .contenedor-video a button:hover{
