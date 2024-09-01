@@ -2,27 +2,66 @@ main{
     margin: 0;
     padding: 0;
 }
-.imagen-banner img{
-    width: 100%;
-    object-fit: cover;
+.imagen-banner{
     position: relative;
+    display: flex;
+    height: 800px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.imagen-banner img{
+    width: 99vw;
+    height: 800px;
+    object-fit: cover;
+    position: absolute;
 }
 .imagen-banner h1{
     position: absolute;
     z-index: 1;
     top: 50%;
     left: 50%;
-    translate: -50% -50%;
+    transform: translateX(-50%);
     font-size: 50px;
     color: white;
     text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
 }
+#acerca{
+    width: 100%;
+    padding: 0 60px;
+    display: flex;
+    justify-content:space-around;
+    background-color: white;
+    align-items: center;
+    height: 160px;
+    flex-wrap: wrap;
+}
+.info-contacto{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.icono{
+    height: 50px;
+}
+.texto-info h1{
+    font-size:30px ;
+}
+.texto-info p{
+    text-align: center;
+}
 #contenido{    
-    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../images/contacto/fondo-contacto.jpg);
+    background-repeat: repeat;
+    background-attachment: fixed;
+
 }
 .formulario{
     width: 50%;
-    background-color: brown;
+    background-color: transparent;
+    background-color: rgba(0,0,0,0.7);
     margin: 40px auto;
     padding: 15px 15px;
     border-radius: 20px;
@@ -32,9 +71,11 @@ main{
     padding: 15px 15px;
 }
 .formulario div h1{
+    text-align: center;
+    color: #fff;
     font-size: 30px;
     font-weight: bold;
-    border-bottom: 3px solid blue;
+    border-bottom: 3px #f6dc4c solid;
 }
 
 form{
@@ -43,6 +84,70 @@ form{
     gap: 15px;
 }
 form label{
-    color: #999;
+    color: #fff;
+}
+form input{
+    padding: 11px;
+}
+form textarea{
+    height: 100px;
+}
+form button{
+    margin: 0 auto;
+    height: 40px;
+    width: 100px;
+    background-color: #f6dc4c;
+    border-radius: 40px;
+    border: none;
     font-weight: bold;
+}
+#ubicacion{
+    display: flex;
+    flex-direction: column;
+}
+#ubicacion div:first-child{
+    text-align: center;
+    padding: 40px;
+    font-size: 20px;
+    border-bottom: #f6dc4c 2px solid ;
+}
+@media (max-width: 768px){
+    .imagen-banner h1{
+        font-size: 30px;
+    }
+    .icono{
+    height: 50px;
+    }
+    .texto-info h1{
+    font-size:20px ;
+    }
+    .texto-info p{
+        font-size: 14px;
+    text-align: center;
+    }
+    #acerca{
+        gap: 20px;
+        height: 300px;
+    }
+    .formulario{
+        width: 80%;
+    }
+    .formulario div h1{
+        font-size: 20px;
+    }
+    
+    form label{
+        color: #fff;
+        font-size: 15px;
+    }
+    form input{
+        padding: 5px;
+    }
+    form textarea{
+        height: 100px;
+    }
+    #ubicacion div:first-child{
+        font-size:15px ;
+        padding: 20px;
+    }
 }

@@ -1,31 +1,112 @@
 body {
-    width: 100%;
-    height: 100vh;
-    background-color: #333;
-    /* background: url(../images/santa-cruz/santa-cruz.webp); */
+    background: #fff;
+    /* background: url(../images/fondo.webp); */
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-position: center center;
 }
-
-.historia {
+.banner {
+    background-image: url('../images/departamentos.png'); 
+    background-size: cover;
+    background-position: center;
+    height: 76vh;
+    display: flex;
+    justify-content: center; 
+    align-items: flex-end; 
     text-align: center;
-    font-size: large;
-    color: #fff;
-    letter-spacing: 2px;
-    margin: 0 100px;
+    color: white;
+    padding-bottom: 100px; 
 }
 
-.historia p{
-    padding: 25px;
-    text-align: justify;
-    line-height: 30px;
+.banner-content {
+    top:20%;
+    left: 5%;
+    position: absolute;
+    background-color: rgba(22, 25, 30, 0.637); 
+    padding: 10px 50px; 
+    border-radius: 20px; 
+    max-width: 25%; 
 }
 
-.resumen {
-    justify-content: center;
-    box-sizing: border-box;
+.banner-content h1 {
+    font-size: 3rem; 
+    font-weight: medium; 
+    margin-bottom: 10px;
+}
+
+.banner-content p {
+    font-size: 1rem; 
+    margin-top: 10px;
+    color: #fff; 
+}
+/*lugares turisticos*/
+
+
+/*Festividades*/
+.dark-background {
+    background-color: #f1f1f1; 
+    color: #030303;
+    padding: 100px;
+}
+
+.eventos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+    gap: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.evento {
+    background-color: #fffefe;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 2px 7px 9px rgba(0, 0, 0, 0.2); /* Sombra detrás del contenedor */
+    overflow: hidden; /* Para que las esquinas de la imagen y el contenedor coincidan */
+}
+
+.evento img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.evento h3 {
+    margin: 15px 0 10px 0;
+    font-size: 1.5em;
+    color: #141414;
+}
+
+.evento p {
+    margin: 5px 20px; /* Margen interno para el texto */
+    color: #4e4e4e;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 20px; /* Margen interno para la info */
+}
+
+.info div {
+    display: flex;
+    align-items: center;
+}
+
+.info i {
+    font-size: 1.2em; /* Tamaño de los iconos */
+    margin-right: 8px;
+    color: #161616; /* Color de los iconos */
+}
+
+.info p {
     margin: 0;
-    text-align: center;
+    font-weight: bold;
+    font-size: 0.9em;
+    color: #7c7b7b; /* Color del texto */
 }
+
+
+

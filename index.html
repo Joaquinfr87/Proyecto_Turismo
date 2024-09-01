@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles/principal.css" />
     <link rel="stylesheet" href="styles/header-footer.css">
     <link rel="stylesheet" href="styles/index-style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
@@ -22,14 +23,14 @@
                     <a href="#">Departamentos</a>
                     <ul class="submenu-dep">
                         <li><a href="pages/beni.html">Beni</a></li>
-                        <li><a href="#Cochabamba">Cochabamba</a></li>
-                        <li><a href="pages/santa_cruz.html">Santa Cruz</a></li>
+                        <li><a href="pages/Cochabamba.html">Cochabamba</a></li>
+                        <li><a href="pages/Santa_Cruz.html">Santa Cruz</a></li>
                         <li><a href="pages/potosi.html">Potosí</a></li>
                         <li><a href="pages/oruro.html">Oruro</a></li>
-                        <li><a href="#La Paz">La Paz</a></li>
-                        <li><a href="#Tarija">Tarija</a></li>
-                        <li><a href="#Pando">Pando</a></li>
-                        <li><a href="#Chuquisaca">Chuquisaca</a></li>    
+                        <li><a href="pages/La-Paz.html">La Paz</a></li>
+                        <li><a href="pages/Tarija.html">Tarija</a></li>
+                        <li><a href="pages/Pando.html">Pando</a></li>
+                        <li><a href="pages/Chuquisaca.html">Chuquisaca</a></li>    
                     </ul>
                 </li>
                 <li><a href="pages/contactos.html">Contacto</a></li>
@@ -44,7 +45,104 @@
             <h1>Visita nuestro pais</h1>
             <a href="pages/contactos.html"><button>Contactanos</button></a>
         </div>
+        <!-- Acerca de Nosotros -->
+    <section id="sobre-nosotros" class="about-section">
+        <div class="about-content">
+          <div class="img_acerca_de">
+            <img src="images/principal/acerca_de.png" alt="Acerca de Nosotros" />
+          </div>
+          <div class="about-text">
+            <h2>Sobre Nosotros</h2>
+            <p>
+              En nuestra plataforma, dedicamos nuestros esfuerzos a brindarte la
+              mejor información sobre los lugares turísticos más emblemáticos y
+              famosos de Bolivia. Nuestro objetivo es ayudarte a explorar y
+              descubrir las maravillas que este hermoso país tiene para ofrecer.
+            </p>
+          </div>
+        </div>
+      </section>
+  
+      <!-- Servicios -->
+      <section class="services-section">
+        <h2>SERVICIOS</h2>
+        <div class="services-content">
+          <div class="service-item">
+            <img src="images/servicio1.png" alt="Servicio 1" />
+            <h3>Itinerarios Personalizados</h3>
+            <p>
+              Te ayudamos a crear itinerarios personalizados según tus intereses y
+              tiempo disponible, asegurando una experiencia inolvidable.
+            </p>
+          </div>
+          <div class="service-item staggered">
+            <h3>Reseñas de Destinos</h3>
+            <p>
+              Encuentra opiniones y reseñas de visitantes sobre los principales
+              destinos turísticos, para hacer la mejor elección en tu visita.
+            </p>
+            <img src="images/servicio2.png" alt="Servicio 2" />
+          </div>
+          <div class="service-item">
+            <img src="images/servicio3.png" alt="Servicio 3" />
+            <h3>Guías Turísticas</h3>
+            <p>
+              Proveemos detalladas guías turísticas de los destinos más increíbles
+              de Bolivia, para que planifiques tu viaje con facilidad.
+            </p>
+          </div>
+        </div>
+      </section>
+  
+      <!-- Testimonios -->
+      <section id="testimonios" class="testimonials-section">
+        <h2>Testimonios</h2>
+        <div class="slider-container">
+          <div class="slider">
+            <div class="slide active">
+              <div class="testimonial-profile">
+                <img src="images/principal/perfil1.png" alt="Perfil 1" />
+              </div>
+              <div class="testimonial-content">
+                <p class="stars">★★★★★</p>
+                <p>
+                  "Gracias a esta web, pude planificar mi viaje a Bolivia de una
+                  manera fenomenal. Los lugares turísticos recomendados fueron
+                  increíbles."
+                </p>
+                <h4>nombre</h4>
+                <p class="role">Viajero entusiasta</p>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="testimonial-profile">
+                <img src="images/principal/perfil2.png" alt="Perfil 2" />
+              </div>
+              <div class="testimonial-content">
+                <p class="stars">★★★★★</p>
+                <p>
+                  "El sitio me proporcionó toda la información que necesitaba para
+                  visitar Bolivia. Las guías son muy detalladas y útiles."
+                </p>
+                <h4>nombre</h4>
+                <p class="role">Aventurera de corazón</p>
+              </div>
+            </div>
+            <!-- agregar más testimonios  -->
+          </div>
+          <span class="prev">←</span>
+          <span class="next">→</span>
+        </div>
+        <div class="slider-navigation">
+          <div class="dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <!-- Más puntos -->
+          </div>
+        </div>
+      </section>
     </main>
+
  <!--Script header--------------------------------------------------------------------------------->   
     <script type="text/javascript">
         window.addEventListener("scroll",function(){
