@@ -214,3 +214,38 @@ html {
   background: #000;
 }
 
+@media (max-width: 500px) {
+  .tranding-slide-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .tranding-slide-content .food-price,
+  .tranding-slide-content .tranding-slide-content-bottom {
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .food-rating {
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .tranding-slide-content h2, .tranding-slide-content .tranding-slide-content-bottom{
+    width: fit-content;
+  }
+  .tranding-slide-content h2{
+    margin: 0 auto;
+  }
+  
+}
+
+.tranding-slide-content .tranding-slide-content-bottom, .tranding-slide-content h2{
+  background-color: hsla(54, 95%, 16%, 0.37);
+  border-radius: 20px;
+}
