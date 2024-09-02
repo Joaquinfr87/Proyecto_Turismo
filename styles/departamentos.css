@@ -51,14 +51,15 @@ body {
 }
 
 .eventos {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px;
     margin: 0 auto;
-    max-width: 1200px;
+    justify-content: center;
 }
 
 .evento {
+    width: 300px;
     background-color: #fffefe;
     border-radius: 10px;
     text-align: center;
@@ -67,7 +68,8 @@ body {
 }
 
 .evento img {
-    width: 100%;
+    width: 300px;
+    min-width: 200px;
     height: auto;
     display: block;
     margin: 0 auto;
