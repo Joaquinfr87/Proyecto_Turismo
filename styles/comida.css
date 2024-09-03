@@ -249,3 +249,23 @@ html {
   background-color: hsla(54, 95%, 16%, 0.37);
   border-radius: 20px;
 }
+.container{
+}
+#titulo-comida{
+  font-family: 'Arial', sans-serif;
+    font-size: 2.5em; /* Tamaño grande para el título */
+    text-align: center; /* Centra el texto */
+    margin: 20px 0; /* Espacio arriba y abajo */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil para el texto */
+    border: 2px solid black;
+    border-radius: 50px;
+}
+#subtitulo-comida{
+  font-family: 'Arial', sans-serif;
+  font-size: 1.5em; /* Tamaño más pequeño que el título */
+  text-align: center; /* Centra el texto */
+  margin: 10px 0; /* Espacio arriba y abajo */
+  font-weight: normal; /* Normaliza el peso de la fuente */
+  border-radius: 50px;
+  border: 2px solid black;
+}

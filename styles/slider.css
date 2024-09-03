@@ -1,6 +1,7 @@
 #contenedor-mayor{
-    display: block;
+    display: flex;
     height: 100vh;
+    background-color: #ccc;
 }
 .container-slide{
      position: absolute;
@@ -118,7 +119,7 @@
     transition-delay: 0.5s;
 }
 /* responsivo */
-@media(max-width: 900px){
+@media(max-width: 900px){   
     .slider{
         position: absolute;
         inset: 40px 40px 200px 40px;
@@ -145,5 +146,7 @@
         left: 280px;
     }
 }
+
+
 
  

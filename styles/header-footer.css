@@ -34,6 +34,7 @@ header.sticky {
     padding: 10px 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.204);
 }
+
 header.sticky ul li a {
   color: rgb(2, 2, 2);
 }
@@ -48,7 +49,17 @@ header.sticky .ciudad {
   background-color: transparent;
   padding-top: 0px;
 }
-
+.logo{
+  display: flex;
+  gap: 60px;
+  align-items: center;
+}
+.logo h1{
+  color: white;
+}
+header.sticky .logo h1{
+  color: black
+}
 .logo a img {
   width: 90px;
   max-width: 100%;
@@ -155,7 +166,13 @@ header ul li.submenu .submenu-dep li a:hover {
   header {
     flex-direction: column;
   }
-
+  .logo{
+    flex-direction: column;
+    gap: 0px;
+  }
+  .logo h1{
+    color: white;
+  }
   nav ul {
     flex-direction: column;
     width: 100%;
