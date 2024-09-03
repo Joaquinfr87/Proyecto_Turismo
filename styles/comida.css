@@ -251,3 +251,18 @@ html {
   background-color: hsla(54, 95%, 16%, 0.37);
   border-radius: 20px;
 }
+#titulo-comida{
+  text-transform: uppercase;
+  text-align: center;
+}
+@media (max-width:768px) {
+  #titulo-comida{
+    font-size: 30px;
+  }
+  #subtitulo-comida{
+    font-size: 25px;
+  }
+  #tranding {
+    padding: 1rem 0;
+  }
+}
