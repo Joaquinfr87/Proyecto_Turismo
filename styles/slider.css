@@ -1,7 +1,6 @@
 #contenedor-mayor{
     display: flex;
     height: 100vh;
-    background-color: #ccc;
 }
 .container-slide{
      position: absolute;
@@ -11,16 +10,17 @@
      display: flex;
      justify-content: center;
      align-items: center;
-     background-color: #ccc; 
+     background-color: transparent; 
 }
 .slider{
     position: absolute;
-    inset: 80px 200px 80px 80px;
-    background-color: #ccc;
+    inset: 0px 0px 0px 0px;
+    background-color: transparent;
+    border-radius: 0px;
 }
 .slider .slide{
     position: absolute;
-    top: 50%;
+    top: 53%;
     transform: translateY(-50%);
     width: 240px;
     height: 320px;
@@ -45,19 +45,24 @@
     transform: translateY(0);    
     box-shadow: 0 25px 50px rgba(0,0,0,0);
     background-size: cover;
+    border-radius: 0px;
 }
 .slider .slide:nth-child(3){
-    left: calc(50% + 240px);
+    left: calc(40% + 240px);
     background-size: cover;
 }
 .slider .slide:nth-child(4){
-    left: calc(50% + 500px);
+    left: calc(40% + 500px);
     background-size: cover;
 }
 .slider .slide:nth-child(5){
-    left: calc(50% + 760px);
+    left: calc(40% + 760px);
     background-size: cover;
-    opacity: 0;
+}
+.slider .slide:nth-child(6) {
+    left: calc(55% + 960px);
+    background-size: cover;
+    opacity: 0.5;
 }
 .buttons{
     position: absolute;
@@ -70,7 +75,7 @@
     position: relative;
     width: 50px;
     height: 50px;
-    background-color: #111;
+    background-color: #ffffff;
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -83,8 +88,8 @@
     position: absolute;
     width: 15px;
     height: 15px;
-    border-top: 4px solid #fff;
-    border-left: 4px solid #fff;
+    border-top: 4px solid #000000;
+    border-left: 4px solid #030303;
     transform: rotate(315deg) translate(2px,2px);
 }
 .buttons span:nth-child(2):before{
@@ -95,13 +100,16 @@
 }
 .content{
     position: relative;
-    padding: 40px;
-    max-width: 600px;
+    padding: 0px;
+    max-width: 350px;
     transition: 0.25s;
     transition-delay: 0s;
-    transform: translateY(40px);
+    transform: translateY(-50%, -50%);
+    top: -35%;
+    left: 10%;
     z-index: 1000;
     opacity: 0;
+    text-align: left;
 }
 .content h2{
     font-size: 2em;
@@ -115,21 +123,32 @@
 .slider .slide:nth-child(1) .content,
 .slider .slide:nth-child(2) .content{
     opacity: 1;
-    transform: translateY(0px);
+    transform: translateY(-60px);
     transition-delay: 0.5s;
 }
 /* responsivo */
-@media(max-width: 900px){   
+@media(max-width: 900px){
+    .slider .slide .content {
+        transform: translate(0, 40px); 
+        left: initial; 
+        top: initial; 
+        padding: 20px; 
+        text-align: left; 
+        max-width: 100%; 
+    }
     .slider{
         position: absolute;
-        inset: 40px 40px 200px 40px;
+        inset: 100px 0px 200px 0px;
+        display: flex;
     }
     .slider .slide{
         width: 100px;
         height: 100px;
         top: initial;
         bottom: -170px;
-        box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.5);background-size: contain; 
+        background-position: center; 
+        background-repeat: no-repeat;
     }
     .slider .slide:nth-child(1),
     .slider .slide:nth-child(2){
@@ -137,16 +156,14 @@
         bottom: 0px;
     }
     .slider .slide:nth-child(3){
-        left: 40px;
+        left: 50px;
     }
     .slider .slide:nth-child(4){
-        left: 160px;
+        left: 185px;
     }
     .slider .slide:nth-child(5){
-        left: 280px;
+        left: 310px;
     }
 }
-
-
 
  
